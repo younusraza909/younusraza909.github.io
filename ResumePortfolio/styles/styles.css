@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  backface-visibility: hidden;
+}
+
+body {
+  overflow: hidden;
+  background-color: rgb(26, 27, 29);
+  font-family: sans-serif;
+}
+img {
+  height: 100%;
+}
+
+.container {
+  display: flex;
+}
+
+.fas,
+.far,
+.fab {
+  color: rgb(106, 106, 108);
+}
+
+.side-nav {
+  height: 100vh;
+  width: 15vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 300px;
+}
+
+.fa-user {
+  color: rgb(72, 161, 115);
+}
+
+.cloud-icon {
+  color: rgb(72, 161, 115);
+}
+.bar-icon {
+  text-align: center;
+  width: 100%;
+  height: 50px;
+  transition: all 3s ease-out;
+}
+
+.bar-icon:hover {
+  background-color: rgb(72, 161, 115);
+}
+
+.bar-icon .fas {
+  margin-top: 10px;
+}
+
+/* Section 2 */
+.image-section {
+  height: 100vh;
+  width: 95vw;
+  position: relative;
+  transition: all 3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.image-section:hover {
+  transform: scale(1.1);
+}
+
+.user-short-info {
+  position: absolute;
+  bottom: 50px;
+  left: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-short-info h1 {
+  color: #fff;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.badge {
+  font-size: 15px;
+  font-weight: 700;
+  color: rgb(72, 161, 115);
+  margin-bottom: 10px;
+}
+
+.user-short-info .social-icons {
+  display: flex;
+  color: #fff;
+  width: 120px;
+  justify-content: space-between;
+}
+
+.user-short-info .social-icons .fab {
+  color: #fff;
+}
+
+/* Section 3 Main Section */
+.line {
+  border: 1px solid rgb(40, 41, 43);
+}
+.main-section {
+  padding: 25px 25px;
+  height:100vh;
+}
+.main-heading {
+  color: #fbfbfb;
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.main-section .badge {
+  word-spacing: 5px;
+}
+.lead {
+  color: rgb(98, 98, 100);
+  padding: 10px 0;
+  margin: 20px 0;
+  font-size: small;
+  line-height: 1.5;
+}
+
+.secondary-headings {
+  color: #fbfbfb;
+  font-size: 2rem;
+  margin: 20px 10px;
+}
+
+.grid-section .fas {
+  color: rgb(72, 161, 115);
+  font-size: 2rem;
+  margin: 10px 0;
+}
+
+.grid-section .broad-text {
+  color: #fbfbfb;
+  margin: 9px 0;
+}
+
+.grid-section .lead {
+  margin: 10px 0;
+  padding: 5px 0;
+}
+
+.grid-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
+}
