@@ -1,3 +1,21 @@
+let stop = false;
+let timer;
+
+let buttonCtrl = document.querySelector("#buttonCtrl");
+
+buttonCtrl.addEventListener("click", () => {
+  stop = !stop;
+  if (stop) {
+    buttonCtrl.innerHTML = "START";
+    clearInterval(timer);
+  } else {
+    buttonCtrl.innerHTML = "STOP";
+    timer = setInterval(() => {
+      fetchTime();
+    }, 1000);
+  }
+});
+
 const fetchTime = () => {
   const date = new Date();
 
@@ -29,6 +47,8 @@ const updateDOM = (hrs, min, sec, am_pm) => {
   document.querySelector("#am_pm").innerHTML = am_pm;
 };
 
-setInterval(() => {
-  fetchTime();
-}, 1000);
+if (!stop) {
+  timer = setInterval(() => {
+    fetchTime();
+  }, 1000);
+}

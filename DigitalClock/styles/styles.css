@@ -60,3 +60,27 @@ h1 {
   font-size: 4em;
   font-weight: lighter;
 }
+
+.btnContainer {
+  margin-top: 20px;
+}
+
+.btn {
+  margin: 10px;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  color: #fff;
+  font-weight: lighter;
+  cursor: pointer;
+  border: none;
+  background-color: rgb(5, 10, 30);
+  box-shadow: 0px 11px 17px -1px rgba(0, 0, 0, 0.75);
+}
+
+.btn:active {
+  transform: translateY(2px);
+}
+.btn:hover {
+  background-color: rgb(1, 7, 29);
+}
