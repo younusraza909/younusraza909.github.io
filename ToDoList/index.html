@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>TO DO LIST</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <h1>My Todos</h1>
+      <div class="input-contianer">
+        <form action="">
+          <div class="input-flex">
+            <div class="form-input">
+              <label for="name">Name</label>
+              <input type="text" name="name" />
+            </div>
+            <div class="form-input">
+              <label for="description">Description</label>
+              <input type="text" name="description" />
+            </div>
+          </div>
+          <input type="submit" value="Add Todo" />
+        </form>
+      </div>
+      <div class="todo-list-container">
+        <ul class="todo-list">
+          <li class="todo-item work-done">
+            <div class="name-box">
+              <span class="name"> TASK 1</span>
+              <span class="description">It is my first todo item</span>
+            </div>
+            <div class="btn-ctrl">
+              <button class="btn btn-delete" name="deleteCtrl">Delete</button>
+              <button class="btn btn-done" name="doneCtrl">Done</button>
+            </div>
+          </li>
+          <li class="todo-item">
+            <div class="name-box">
+              <span class="name"> TASK 2</span>
+              <span class="description">It is my second todo item</span>
+            </div>
+            <div class="btn-ctrl">
+              <button class="btn btn-delete" name="deleteCtrl">Delete</button>
+              <button class="btn btn-done" name="doneCtrl">Done</button>
+            </div>
+          </li>
+          <li class="todo-item">
+            <div class="name-box">
+              <span class="name"> TASK 3</span>
+              <span class="description">It is my third todo item</span>
+            </div>
+            <div class="btn-ctrl">
+              <button class="btn btn-delete" name="deleteCtrl">Delete</button>
+              <button class="btn btn-done" name="doneCtrl">Done</button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(219, 219, 219);
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.main-container {
+  height: 90vh;
+  width: 85vw;
+  background-color: rgb(51, 51, 51);
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  margin: 40px 0;
+  font-size: 3rem;
+  letter-spacing: 10px;
+  font-weight: lighter;
+}
+
+.input-contianer {
+  width: 80%;
+  height: 12%;
+  background-color: rgb(68, 68, 68);
+}
+/* Styles Relates To form */
+
+form,
+.input-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+}
+
+.form-input {
+  margin: 15px;
+}
+label {
+  font-size: 0.8rem;
+  margin-left: 8px;
+}
+input {
+  display: block;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  outline: none;
+}
+
+input[type="text"] {
+  width: 15rem;
+}
+
+input[type="submit"] {
+  width: 5rem;
+  background-color: rgb(255, 153, 0);
+  color: #fff;
+  border-radius: 20px;
+  font-size: 10px;
+}
+
+input[type="submit"]:active {
+  background-color: rgba(255, 153, 0, 0.753);
+  transform: translateY(2px);
+}
+
+input[type="text"]:focus {
+  border: 1px solid yellow;
+}
+
+/* Todo List Container */
+.todo-list-container {
+  margin-top: 2rem;
+  width: 80%;
+  height: 60%;
+}
+
+.todo-list {
+  height: 100%;
+}
+
+.todo-item {
+  list-style: none;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: rgb(68, 68, 68);
+  margin-bottom: 5px;
+}
+
+.name-box {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.name-box .name {
+  color: rgb(255, 153, 0);
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.name-box .description {
+  font-size: 12px;
+  word-spacing: 2px;
+}
+
+.btn {
+  cursor: pointer;
+  padding: 5px 15px;
+  border-radius: 50px;
+  outline: none;
+  border: 0;
+}
+
+.btn-delete {
+  color: red;
+  border: 1px solid red;
+}
+
+.btn-done {
+  color: green;
+  border: 1px solid green;
+}
+
+.btn:active {
+  transform: translateY(2px);
+}
+
+/* Transition Classes */
+.work-done {
+  opacity: 0.3;
+  text-decoration: line-through;
+}
+.work-done .btn-done {
+  display: none;
+}
