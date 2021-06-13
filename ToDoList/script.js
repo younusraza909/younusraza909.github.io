@@ -31,7 +31,7 @@ function updateTodo(e) {
   const parent = e.target.parentElement.parentElement;
   if (e.target.classList[1] === "btn-delete") {
     parent.classList.add("work-delete");
-    parent.addEventListener("tansitioned", () => {
+    parent.addEventListener("transitionend", function () {
       parent.remove();
     });
   } else if (e.target.classList[1] === "btn-done") {

@@ -89,6 +89,7 @@ input[type="text"]:focus {
   margin-top: 2rem;
   width: 80%;
   height: 60%;
+  transition: all 250ms ease-in-out;
 }
 
 .todo-list {
@@ -104,6 +105,7 @@ input[type="text"]:focus {
   padding: 20px;
   background-color: rgb(68, 68, 68);
   margin-bottom: 5px;
+  transition: all 1s ease-in-out;
 }
 
 .name-box {
@@ -156,8 +158,9 @@ input[type="text"]:focus {
 }
 
 .work-delete {
-  animation: removed-item-animation 1s cubic-bezier(0.55, -0.04, 0.91, 0.94)
-    forwards;
+  /* animation: removed-item-animation 1s cubic-bezier(0.55, -0.04, 0.91, 0.94)
+    forwards; */
+  transform: translateY(600px) rotateZ(90deg);
   /*transform origin is moved to the bottom left corner*/
   transform-origin: 0% 100%;
 }
